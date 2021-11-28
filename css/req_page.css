@@ -1,0 +1,241 @@
+.req {
+  text-align: center;
+}
+.req h2 {
+  font-family: var(--heading-family);
+  font-size: var(--heading-size);
+  font-weight: normal;
+  color: #000;
+}
+.box-req {
+  width: 84px;
+  height: 3px;
+  background: var(--second_colour);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+}
+
+.home-req-box {
+  width: 1024px;
+  height: 369px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 84px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.para_req_sec {
+  width: 500px;
+  height: 369px;
+  background: url(../assets/images/Prayer_req_page/req.jpg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: transform 0.6s ease;
+}
+.para_req_sec:hover {
+  transform: translateY(5px);
+}
+.para_req_sec p {
+  width: 436px;
+  height: 220px;
+  font-size: 22px;
+  line-height: 44px;
+  font-family: Gunny Rewritten;
+  margin: auto;
+}
+.form_sec {
+  width: 469px;
+  height: 369px;
+  border: 3px solid black;
+}
+
+.model_boxes {
+  height: 5px;
+  width: 1215px;
+  display: flex;
+}
+.model_boxes1 {
+  width: 122px;
+  height: 5px;
+  background: #000;
+  margin-right: 22px;
+}
+.model_boxes1 {
+  width: 34px;
+  height: 5px;
+  background: #000;
+  margin-right: 22px;
+}
+.form_sec {
+  text-align: center;
+}
+.form_sec img {
+  width: 47px;
+  height: 35.25px;
+
+  margin-top: 24px;
+}
+.req_form {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.form-list {
+  width: 311px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.form-list input {
+  width: 100%;
+  color: white;
+  height: 32px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.904);
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.req_label {
+  transition: 1s ease-in-out;
+}
+.req_textarea {
+  border: none;
+  color: black;
+  border-bottom: 3px solid black;
+  outline: none;
+  margin-top: 10px;
+}
+
+label {
+  position: absolute;
+  left: 42%;
+  bottom: 7px;
+  text-align: center;
+  color: #000;
+}
+input:focus ~ .req_label {
+  display: none;
+}
+textarea:focus ~ .req_label {
+  display: none;
+}
+
+input:hover ~ .req_label {
+  display: none;
+}
+textarea:hover ~ .req_label {
+  display: none;
+}
+
+.req_btn {
+  width: 203.79px;
+  height: 33.3px;
+  background: #000;
+  color: white;
+  border: none;
+  margin-top: 35px;
+}
+
+@media only screen and (max-width: 1070px) {
+  .home-req-box {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    width: 800px;
+  }
+
+  .para_req_sec {
+    height: 517px;
+    width: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .form_sec {
+    height: 517px;
+    width: 700px;
+    margin-top: 55px;
+  }
+  .form-list {
+    height: 80px;
+    width: 80%;
+  }
+  .req_form {
+    margin-top: 50px;
+  }
+  label {
+    position: absolute;
+    bottom: 47px;
+  }
+  .req_btn {
+    margin-top: 56px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .home-req-box {
+    width: 100%;
+  }
+
+  .para_req_sec,
+  .form_sec {
+    height: 401px;
+    width: 543px;
+  }
+  .form_sec {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .para_req_sec,
+  .form_sec {
+    height: 323px;
+    width: 437px;
+  }
+  .form_sec {
+    height: 400px;
+  }
+  .para_req_sec p {
+    width: 346px;
+    height: 220px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .form-list {
+    height: 50px;
+  }
+  label {
+    position: absolute;
+    bottom: 15px;
+  }
+  .req_textarea {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .para_req_sec,
+  .form_sec {
+    height: 330px;
+    width: 85%;
+  }
+  .form_sec {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 332px) {
+  .para_req_sec p {
+    width: 212px;
+    height: 252px;
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
